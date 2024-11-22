@@ -2,15 +2,19 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 )
 
 func main() {
 	var a int8 = 10
 	var b int16 = int16(a)
+	var newint = "100"
+	var myint, _ = strconv.Atoi(newint)
 
 	fmt.Println()
 	fmt.Printf("Tipe data a: %T, nilai a: %v\n", a, a)
 	fmt.Printf("Tipe data b: %T, nilai b: %v\n", b, b)
+	fmt.Printf("Tipe data myint: %T, nilai myint: %v\n", myint, myint)
 
 	var c uint32 = 255
 	var d uint64 = uint64(c)
